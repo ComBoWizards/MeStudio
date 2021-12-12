@@ -61,7 +61,7 @@ An example is reported here down below:
 > GAAAGGCGTCGCCTCTGCCGCTGTAGATCTCCGTCGTGGCGGTAAGATCGAGCGCCGTGT
 
 ```FSMMA_genomic.gff```
-> 000000F_arrow	Prodigal:2.6	CDS	95	538	.	+	0	ID=JPHAALHC_00001
+> 000000F_arrow    Prodigal:2.6    CDS    95    538    .    +    0    ID=JPHAALHC_00001
 
 As you can see, the header of the fasta file has a pipe as delimeter while the *seqid* column of the GFF3 file as the underscore as delimeter.
 This difference in the formatting syntax can create some troubles and here the last flags are crucial to fix the problem.
@@ -70,4 +70,37 @@ More over, depending on the annotator, we noticed that sometimes we can find dif
 ```ms_replacR``` also fix this kind of anomaly in order to avoid biased results.
 
 
+###### How do I run ms_replacR?
 
+Before running ms_replacR, please make sure to have python3.8 (or above) properly installed on your computer. [Here](https://phoenixnap.com/kb/how-to-install-python-3-ubuntu) you find an "how to install python on Ubuntu" tutorial ;)
+
+After the installation, in order to check the ```ms_replacR``` usage, you can run:
+
+```python3.8 ms_replacR.py --help ```
+
+```usage: ms_replacR.py [-h] [-in INPUTDIR] [-out OUTPUTDIR] [-g GENOMIC] [-f FASTA] [-Me METHYLATION] [-i INPUT_WORD] [-o OUTPUT_WORD]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -in INPUTDIR, --inputdir INPUTDIR
+                        path to your files directory
+  -out OUTPUTDIR, --outputdir OUTPUTDIR
+                        path to new files directory
+  -g GENOMIC, --genomic GENOMIC
+                        path to file produced by genomic annotator [GFF-file]
+  -f FASTA, --fasta FASTA
+                        path to genome file [FASTA/FNA-file]
+  -Me METHYLATION, --methylation METHYLATION
+                        path to file produced by the sequencer [GFF-file]
+  -i INPUT_WORD, --input_word INPUT_WORD
+                        Element to delete [SYMBOL/STRING]
+  -o OUTPUT_WORD, --output_word OUTPUT_WORD
+                        Element to insert [SYMBOL/STRING]
+ ```
+
+Now to process the files contained in the [toyset](/toyset/) folder, please run:
+
+ ```python3.8 -in "path/to/files/" -out "path/to/output/" -g "FSMMA_genomic.gff" -f "FSMMA_genomic.fna" -Me "FSMMA_methylation.gff" -i "|" -o "_"```
+  
+  
+  
