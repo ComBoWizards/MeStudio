@@ -45,7 +45,7 @@ ms_replacR expects six arguments:
 
 The last flags (.5 and .6) are used to communicate a certain character or string to replace.
 As a matter of fact MeStudio requires consistent formatting as far as the sequence identifiers are concerned but sometimes the annotation process can lead to
-genomic headers alterations for what concern “seqid” fields identity and special characters (e.g. a pipe symbol replaced by the underscore).
+genomic headers alterations for what concern “seqname” fields identity and special characters (e.g. a pipe symbol replaced by the underscore).
 
 An example is reported here down below:
 
@@ -62,7 +62,7 @@ An example is reported here down below:
 | 000000F_arrow | Prodigal:2.6 | CDS | 95 | 538 | . | + | 0 | ID=JPHAALHC_00001 |
 |---------------|--------------|-----|----|-----|---|---|---|-------------------|
 
-As you can see, the header of the fasta file has a pipe as delimeter while the *seqid* column of the GFF3 file as the underscore as delimeter.
+As you can see, the header of the fasta file has a pipe as delimeter while the *seqname* column of the GFF3 file as the underscore as delimeter.
 This difference in the formatting syntax can create some troubles and here the last flags are crucial to fix the problem.
 
 More over, depending on the annotator, we noticed that sometimes we can find different order of the contigs between fasta and GFF3 files.
