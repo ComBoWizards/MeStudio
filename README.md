@@ -57,6 +57,7 @@ An example is reported here down below:
 > CGGGCCAGAAGAGCTTCGAATTCACGAGCCGGAAATGCGGTGCGACGATAACGCGTTCGA
 
 ```FSMMA_genomic.gff```
+| seqname | feature | source | feature | start | end | score | strand | frame | attribute | 
 |---------------|--------------|-----|----|-----|---|---|---|-------------------|
 | 000000F_arrow | Prodigal:2.6 | CDS | 95 | 538 | . | + | 0 | ID=JPHAALHC_00001 |
 |---------------|--------------|-----|----|-----|---|---|---|-------------------|
