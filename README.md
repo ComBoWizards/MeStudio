@@ -77,12 +77,11 @@ After the installation, in order to check the ```ms_replacR``` usage, you can ru
 
 ```python3.8 ms_replacR.py --help ```
 
-```usage: ms_replacR.py [-h] [-in INPUTDIR] [-out OUTPUTDIR] [-g GENOMIC] [-f FASTA] [-Me METHYLATION] [-i INPUT_WORD] [-o OUTPUT_WORD]
+```usage: ms_replacR.py [-h] [-out OUTPUTDIR] [-g GENOMIC] [-f FASTA] [-Me METHYLATION] [-i INPUT_WORD] [-o OUTPUT_WORD]
 
 optional arguments:
   -h, --help            show this help message and exit
-  -in INPUTDIR, --inputdir INPUTDIR
-                        path to your files directory
+  
   -out OUTPUTDIR, --outputdir OUTPUTDIR
                         path to new files directory
   -g GENOMIC, --genomic GENOMIC
