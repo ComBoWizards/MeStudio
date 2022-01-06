@@ -34,17 +34,16 @@ to add
 
 ## MeStudio ReplacR
 In order to properly run MeStudio Core, a pre-processing python-based script named ms_replacR has been implemented and is highly suggested to be used. You can find the source code here.
-ms_replacR expects seven arguments:
-1. *input directory*, where the file to analyse are located
-2. *output directory*, in which results and log files will be written
-3. *genomic annotation*, in the GFF3 format
-4. *methylation annotation*, a sequencer-produced modified base calls in the GFF3 format
-5. *genomic sequence*, in fasta or fna file format
-6. *input* string type field
-7. *output* string type field
+ms_replacR expects six arguments:
+1. *output directory*, in which results and log files will be written
+2. *genomic annotation*, in the GFF3 format
+3. *methylation annotation*, a sequencer-produced modified base calls in the GFF3 format
+4. *genomic sequence*, in fasta or fna file format
+5. *input* string type field
+6. *output* string type field
 
 
-The last flags (.6 and .7) are used to communicate a certain character or string to replace.
+The last flags (.5 and .6) are used to communicate a certain character or string to replace.
 As a matter of fact MeStudio requires consistent formatting as far as the sequence identifiers are concerned but sometimes the annotation process can lead to
 genomic headers alterations for what concern “seqid” fields identity and special characters (e.g. a pipe symbol replaced by the underscore).
 
@@ -56,9 +55,6 @@ An example is reported here down below:
 > 
 > GCCGGTCCAGCGCAAAACCCTCGCTCGGCGTGATCGAGAGTATGCGCTGCGAGCCGAGGT
 > CGGGCCAGAAGAGCTTCGAATTCACGAGCCGGAAATGCGGTGCGACGATAACGCGTTCGA
-> GCTGCTCTTCCGAAACATTGGCGAGCGCGAACACGGCCCAGTCACCCTGGTGATTTTCCG
-> TGCTGGAACGCACTTCGATGCGTCTGACGATGCCGTCCGTGCCGGGGGCGGTCGAAACCT
-> GAAAGGCGTCGCCTCTGCCGCTGTAGATCTCCGTCGTGGCGGTAAGATCGAGCGCCGTGT
 
 ```FSMMA_genomic.gff```
 > 000000F_arrow    Prodigal:2.6    CDS    95    538    .    +    0    ID=JPHAALHC_00001
