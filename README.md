@@ -57,8 +57,9 @@ An example is reported here down below:
 > CGGGCCAGAAGAGCTTCGAATTCACGAGCCGGAAATGCGGTGCGACGATAACGCGTTCGA
 
 ```FSMMA_genomic.gff```
+|---------------|--------------|-----|----|-----|---|---|---|-------------------|
 | 000000F_arrow | Prodigal:2.6 | CDS | 95 | 538 | . | + | 0 | ID=JPHAALHC_00001 |
----------------------------------------------------------------------------------
+|---------------|--------------|-----|----|-----|---|---|---|-------------------|
 
 As you can see, the header of the fasta file has a pipe as delimeter while the *seqid* column of the GFF3 file as the underscore as delimeter.
 This difference in the formatting syntax can create some troubles and here the last flags are crucial to fix the problem.
