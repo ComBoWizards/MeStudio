@@ -30,7 +30,9 @@ Inside the [toyset](/toyset/) folder you are going to find three files:
 
 ## Usage
 
-to add
+###### Bard Level
+
+###### Wizard Level
 
 ## MeStudio ReplacR
 In order to properly run MeStudio Core, a pre-processing python-based script named ms_replacR has been implemented and is highly suggested to be used. You can find the source code here.
