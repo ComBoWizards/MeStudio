@@ -17,7 +17,7 @@ MeStudio connects several procedural software components that can be run either 
 
 ## Quick start
 
-Inside the [toyset](/toyset/) folder you are going to find three files:
+Inside the [toyset](/toyset/) folder you are going to find three files needed to start the analysis:
 
 - FSMMA_genomic.fna
 - FSMMA_genomic.gff
@@ -96,7 +96,34 @@ optional arguments:
 Now to process the files contained in the [toyset](/toyset/) folder, please check **Usage** at *Wizard Level*.
 
 ## MeStudio Core
+To add.
 ## MeStudio AnalyzR
+MeStudio also implements a post-processing python-based script named ms_analyzR which has to be run on the four GFF3 MeStudio-deriving files. 
+In addition, for comparative genomic analyses a “gene_presence_abscence.csv” file produced by [Roary](https://sanger-pathogens.github.io/Roary/) can be used to
+define the methylation level and patterns of core and dispensable genome fractions, as well as annotating the genes-coded proteins.
+Here's the mandatory and optional fields required:
+
+```
+usage: ms_analyzR.py [-h] [-out OUTPUTDIR] [-rr ROARY] [-cds CODING] [-ncds NONCODING] [-inter INTERGENIC] [-ups UPSTREAM] [-prt] [-split]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -out OUTPUTDIR, --outputdir OUTPUTDIR
+                        path to your output files
+  -rr ROARY, --roary ROARY
+                        path to ROARY gene_presence_abscence.csv file (OPTIONAL)
+  -cds CODING, --coding CODING
+                        MOTIF_CDS.gff file
+  -ncds NONCODING, --noncoding NONCODING
+                        MOTIF_nCDS.gff file
+  -inter INTERGENIC, --intergenic INTERGENIC
+                        MOTIF_true_intergenic.gff file
+  -ups UPSTREAM, --upstream UPSTREAM
+                        MOTIF_upstream.gff file
+  -prt, --prt_bed       Write in [OUT] tabular per-feature file ready for RCircos (OPTIONAL)
+  -split, --split_features
+                        Rearrange your input GFFs for chromosomes (OPTIONAL)
+```
 
 ## Usage
 
