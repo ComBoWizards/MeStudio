@@ -106,11 +106,15 @@ Now to process the files contained in the [toyset](/toyset/) folder, please chec
 From [src](/src/) folder you can download all the scripts needed to perform the analysis to wizard level.
 Here down below you have a step by step process assuming that you are using the files contained into the [toyset](/toyset/) folder and a Linux-based OS.
 
-`ms_analyzR`
+`ms_replacR`
 ```
 python3.8 ms_replacR.py -out "/path/to/output_folder" -g "FSMMA_genomic.gff" -f "FSMMA_genomic.fna" -Me "FSMMA_methylation.gff" -i "|" -o "_"
 ```
 `MeStudio Core`
+
+```
+to add
+```
 
 `ms_analyzR`
 ```
