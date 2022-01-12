@@ -29,8 +29,8 @@ Inside the [toyset](/toyset/) folder you are going to find three files:
 
 
 ## MeStudio ReplacR
-In order to properly run MeStudio Core, a pre-processing python-based script named ms_replacR has been implemented and is highly suggested to be used. You can find the source code here.
-ms_replacR expects six arguments:
+In order to properly run *MeStudio Core*, a pre-processing python-based script named *ms_replacR* has been implemented and is highly suggested to be used. You can find the source code here.
+*ms_replacR* expects six arguments:
 1. *output directory*, in which results and log files will be written
 2. *genomic annotation*, in the GFF3 format
 3. *methylation annotation*, a sequencer-produced modified base calls in the GFF3 format
@@ -62,18 +62,19 @@ As you can see, the header of the fasta file has a pipe as delimeter while the *
 This difference in the formatting syntax can create some troubles and here the last flags are crucial to fix the problem.
 
 More over, depending on the annotator, we noticed that sometimes we can find different order of the contigs between fasta and GFF3 files.
-```ms_replacR``` also fix this kind of anomaly in order to avoid biased results.
+*ms_replacR* also fix this kind of anomaly in order to avoid biased results.
 
 
 ###### How do I run ms_replacR?
 
-Before running ms_replacR, please make sure to have python3.8 (or above) properly installed on your computer. [Here](https://phoenixnap.com/kb/how-to-install-python-3-ubuntu) you find an "how to install python on Ubuntu" tutorial ;)
+Before running *ms_replacR*, please make sure to have python3.8 (or above) properly installed on your computer. [Here](https://phoenixnap.com/kb/how-to-install-python-3-ubuntu) you find an "how to install python on Ubuntu" tutorial ;)
 
-After the installation, in order to check the ```ms_replacR``` usage, you can run:
+After the installation, in order to check the *ms_replacR* usage, you can run:
 
-```python3.8 ms_replacR.py --help ```
+```
+python3.8 ms_replacR.py --help
 
-```usage: ms_replacR.py [-h] [-out OUTPUTDIR] [-g GENOMIC] [-f FASTA] [-Me METHYLATION] [-i INPUT_WORD] [-o OUTPUT_WORD]
+usage: ms_replacR.py [-h] [-out OUTPUTDIR] [-g GENOMIC] [-f FASTA] [-Me METHYLATION] [-i INPUT_WORD] [-o OUTPUT_WORD]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -107,10 +108,14 @@ Here down below you have a step by step process assuming that you are using the 
 
 `ms_analyzR`
 ```
-python3.8 ms_analyzR.py -out "/path/to/output_folder" -g "FSMMA_genomic.gff" -f "FSMMA_genomic.fna" -Me "FSMMA_methylation.gff" -i "|" -o "_"
+python3.8 ms_replacR.py -out "/path/to/output_folder" -g "FSMMA_genomic.gff" -f "FSMMA_genomic.fna" -Me "FSMMA_methylation.gff" -i "|" -o "_"
 ```
 `MeStudio Core`
 
+`ms_analyzR`
+```
+python3.8 ms_analyzR.py -out "/path/to/output_folder" -cds "CDS.gff" -ncds "nCDS.gff" -inter "true_intergenic.gff" -ups "upstream.gff" -rr "gene_presence_absence.csv" -split -evo
+```
 
 ## Results
 ## Reference
