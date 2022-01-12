@@ -124,6 +124,21 @@ optional arguments:
   -split, --split_features
                         Rearrange your input GFFs for chromosomes (OPTIONAL)
 ```
+The `split` flag saves into the output directory the GFFs at “chromosome level” rather than “feature level”. Each GFF produced will be characterized not for
+feature (CDS, nCDS, true intergenic and upstream) but by chromosomes (or contigs), maintaining the MeStudio Core derived contents and layout. 
+
+The `prt` flag produces a BED file for each feature in which is reported: 
+- the chrom column, with the name of each chromosome or contig
+- start of the feature
+- end of the feature
+- the name of the ID found in that interval
+- the number of methylations found for ID
+- the protein product of the ID
+ 
+As well as being significant, the information contained in BED files are directly related to an R script (see [src](/src/)) which plots the distribution of the
+methylation density for each feature analysed making use of the r-package [circlize](https://jokergoo.github.io/circlize_book/book/). 
+
+Now to process the files contained in the [toyset](/toyset/) folder, please check **Usage** at *Wizard Level*.
 
 ## Usage
 
