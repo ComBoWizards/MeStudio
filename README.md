@@ -7,12 +7,12 @@ MeStudio connects several procedural software components that can be run either 
 ## Table of Contents
 
 - [Quick start](#Quick-start)
-- MeStudio ReplacR
-- MeStudio Core
-- MeStudio AnalyzR
-- Usage
-- Results
-- Reference
+- [MeStudio ReplacR](#MeStudio-ReplacR)
+- [MeStudio Core](#MeStudio-Core)
+- [MeStudio AnalyzR](#MeStudio-AnalyzR)
+- [Usage](#Usage)
+- [Results](#Results)
+- [Reference](#Reference)
 
 
 ## Quick start
