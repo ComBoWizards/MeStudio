@@ -17,6 +17,9 @@ MeStudio connects several procedural software components that can be run either 
 
 ## Quick start
 
+Hey sorcerer's apprentice, we know.. You got a lot to work so you may have no time to read all the sorcerer's book.
+Please, feel free to directly click on "Usage" and check the *bard-way* to run MeStudio. All's gonna work in a wand flight. 
+
 Inside the [toyset](/toyset/) folder you are going to find three files needed to start the analysis:
 
 - FSMMA_genomic.fna
