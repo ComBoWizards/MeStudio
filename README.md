@@ -108,8 +108,7 @@ Here down below you have a step by step process assuming that you are using the 
 > ms_analyzR
 ```
 python3.8 ms_analyzR.py -out "/path/to/output_folder" -g "FSMMA_genomic.gff" -f "FSMMA_genomic.fna" -Me "FSMMA_methylation.gff" -i "|" -o "_"
-
-
+```
 
 ## Results
 ## Reference
