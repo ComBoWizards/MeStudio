@@ -27,6 +27,8 @@ Inside the [toyset](/toyset/) folder you are going to find three files needed to
 ```FSMMA_genomic.gff``` is the product of the genomic annotation (executed via [Prokka](https://github.com/tseemann/prokka) annotator). The file is reported in GFF3 format.
 ```FSMMA_methylation.gff``` is the GFF3 file with methylation positions obtained through the sequencer. We performed the analysis using the PacBio RT-SMRT sequencing.
 
+N.B. please note that Prokka and Roary (see #Usage) can be easily found to [Galaxy](https://usegalaxy.org), the installation of these tools is not strictly needed.
+
 
 ## MeStudio ReplacR
 In order to properly run *MeStudio Core*, a pre-processing python-based script named *ms_replacR* has been implemented and is highly suggested to be used. You can find the source code here.
