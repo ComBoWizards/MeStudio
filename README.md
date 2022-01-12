@@ -7,10 +7,10 @@ MeStudio connects several procedural software components that can be run either 
 ## Table of Content
 
 - Quick start
-- Usage
 - MeStudio ReplacR
 - MeStudio Core
 - MeStudio AnalyzR
+- Usage
 - Results
 - Reference
 
@@ -27,12 +27,6 @@ Inside the [toyset](/toyset/) folder you are going to find three files:
 ```FSMMA_genomic.gff``` is the product of the genomic annotation executed via [Prokka](https://github.com/tseemann/prokka) annotator. The file is reported in GFF3 format.
 ```FSMMA_methylation.gff``` is the GFF3 file with methylation positions obtained through the sequencer. We performed the analysis using the PacBio RT-SMRT sequencing.
 
-
-## Usage
-
-###### Bard Level
-
-###### Wizard Level
 
 ## MeStudio ReplacR
 In order to properly run MeStudio Core, a pre-processing python-based script named ms_replacR has been implemented and is highly suggested to be used. You can find the source code here.
@@ -98,9 +92,18 @@ optional arguments:
                         Element to insert [SYMBOL/STRING]
  ```
 
-Now to process the files contained in the [toyset](/toyset/) folder, please run:
+Now to process the files contained in the [toyset](/toyset/) folder, please check **Usage** at *Wizard Level*.
 
- ```python3.8 -in "path/to/files/" -out "path/to/output/" -g "FSMMA_genomic.gff" -f "FSMMA_genomic.fna" -Me "FSMMA_methylation.gff" -i "|" -o "_"```
-  
-  
+## MeStudio Core
+## MeStudio AnalyzR
+
+## Usage
+
+###### Bard Level
+
+###### Wizard Level
+From [src](/src/) folder you can download 
+
+## Results
+## Reference
   
